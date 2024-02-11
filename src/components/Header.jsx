@@ -9,8 +9,8 @@ const Header = () => {
           className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
           aria-label="Global"
         >
-          <a className="flex-none text-gray-300 text-xl font-semibold" href="/">
-            Animated Website
+          <a className="flex-none" href="/">
+            <img className="h-8" src="/logo.png" alt="" />
           </a>
           <div className="flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:ps-5">
             <motion.div
