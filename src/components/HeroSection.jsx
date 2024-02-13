@@ -26,7 +26,7 @@ const HeroSection = () => {
               className="mr-auto place-self-center lg:col-span-7"
             >
               <h1 className="max-w-2xl mb-4 text-4xl text-white font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
-                My name is Muhammad Awais
+                I'm Muhammad Awais
               </h1>
               <p className="max-w-2xl font-light text-gray-200 md:text-lg lg:text-xl">
                 I'm a Frontend Developer with two years of experience in
@@ -35,82 +35,85 @@ const HeroSection = () => {
                 React.
               </p>
               <div className="flex mt-6">
-                                  <a
-                    href="https://instagram.com/awais_dev"
-                    target="_blank"
-                    rel="noreferrer"
-                                      >
-                    <motion.div
-                      whileHover={{ scale: 1.2 }}
-                      whileTap={{ scale: 0.9 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                      className="font-medium h-12 flex items-center justify-center flex-col bg-[#FFD0EC] m-2 px-4 py-3 cursor-pointer rounded text-gray-800"
-                      onMouseEnter={() => setIsHoverChat(true)}
-                      onMouseLeave={() => setIsHoverChat(false)}
-                    >
-                      {isHoverChat ? (
-                        <img
-                          className="h-9"
-                          style={{ mixBlendMode: "multiply" }}
-                          src={chatImgGif}
-                          alt="img"
-                        />
-                      ) : (
-                        <img className="h-8" src={chatImg} alt="img" />
-                      )}
-                    </motion.div>
-                  </a>
-                                    <a
-                    href="https://www.facebook.com/profile.php?id=100084660172027"
-                    target="_blank"
-                    rel="noreferrer"
-                                      >
-                    <motion.div
-                      whileHover={{ scale: 1.2 }}
-                      whileTap={{ scale: 0.9 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                      className="font-medium bg-[#FFD0EC] h-12 flex items-center justify-center m-2 px-4 py-3 cursor-pointer rounded text-gray-800"
-                      onMouseEnter={() => setIsHoverFb(true)}
-                      onMouseLeave={() => setIsHoverFb(false)}
-                    >
-                      {isHoverFb ? (
-                        <img
-                          className="h-9"
-                          style={{ mixBlendMode: "multiply" }}
-                          src={FbImgGif}
-                          alt="img"
-                        />
-                      ) : (
-                        <img className="h-8" src={FbImg} alt="img" />
-                      )}
-                    </motion.div>
-                  </a>
-                  <a
-                    href="https://github.com/awaisdev2"
-                    target="_blank"
-                    rel="noreferrer"
-                                      >
-                    <motion.div
-                      whileHover={{ scale: 1.2 }}
-                      whileTap={{ scale: 0.9 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                      className="font-medium bg-[#FFD0EC] h-12 flex items-center justify-center m-2 px-4 py-3 cursor-pointer rounded text-gray-800"
-                      onMouseEnter={() => setIsHoverCat(true)}
-                      onMouseLeave={() => setIsHoverCat(false)}
-                    >
-                      {isHoverCat ? (
-                        <img
-                          className="h-9"
-                          style={{ mixBlendMode: "multiply" }}
-                          src={catImgGif}
-                          alt="img"
-                        />
-                      ) : (
-                        <img className="h-8" src={catImg} alt="img" />
-                      )}
-                    </motion.div>
-                  </a>
-                                </div>
+                <a
+                  href="https://instagram.com/awais_dev"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                    className="font-medium h-12 flex items-center justify-center flex-col bg-[#FFD0EC] link-btn m-2 px-4 py-3 cursor-pointer text-gray-800"
+                    onMouseEnter={() => setIsHoverChat(true)}
+                    onMouseLeave={() => setIsHoverChat(false)}
+                    title="Instagram"
+                  >
+                    {isHoverChat ? (
+                      <img
+                        className="h-9"
+                        style={{ mixBlendMode: "multiply" }}
+                        src={chatImgGif}
+                        alt="img"
+                      />
+                    ) : (
+                      <img className="h-8" src={chatImg} alt="img" />
+                    )}
+                  </motion.div>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100084660172027"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Facebook"
+                >
+                  <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                    className="font-medium bg-[#FFD0EC] link-btn h-12 flex items-center justify-center m-2 px-4 py-3 cursor-pointer text-gray-800"
+                    onMouseEnter={() => setIsHoverFb(true)}
+                    onMouseLeave={() => setIsHoverFb(false)}
+                  >
+                    {isHoverFb ? (
+                      <img
+                        className="h-9"
+                        style={{ mixBlendMode: "multiply" }}
+                        src={FbImgGif}
+                        alt="img"
+                      />
+                    ) : (
+                      <img className="h-8" src={FbImg} alt="img" />
+                    )}
+                  </motion.div>
+                </a>
+                <a
+                  href="https://github.com/awaisdev2"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Github"
+                >
+                  <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                    className="font-medium bg-[#FFD0EC] link-btn h-12 flex items-center justify-center m-2 px-4 py-3 cursor-pointer text-gray-800"
+                    onMouseEnter={() => setIsHoverCat(true)}
+                    onMouseLeave={() => setIsHoverCat(false)}
+                  >
+                    {isHoverCat ? (
+                      <img
+                        className="h-9"
+                        style={{ mixBlendMode: "multiply" }}
+                        src={catImgGif}
+                        alt="img"
+                      />
+                    ) : (
+                      <img className="h-8" src={catImg} alt="img" />
+                    )}
+                  </motion.div>
+                </a>
+              </div>
             </motion.div>
           </AnimatePresence>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
